@@ -2732,38 +2732,3 @@ footer .copyright span:last-child::after {
 
 /*# sourceMappingURL=main.css.map */
 
-
-/* ==== Hard reset for Resume/Education sections ==== */
-#resume,
-#education {
-  background: #ebebeb !important;   /* theme grey */   /* :contentReference[oaicite:0]{index=0} */
-  color: #313131 !important;        /* dark text */    /* :contentReference[oaicite:1]{index=1} */
-}
-
-/* Make sure nothing inside paints its own background */
-#resume .row,
-#resume .col-twelve,
-#resume .resume-timeline,
-#resume .timeline-wrap,
-#resume .timeline-block,
-#resume::before,
-#education .row,
-#education .col-twelve,
-#education .resume-timeline,
-#education .timeline-wrap,
-#education .timeline-block,
-#education::before {
-  background: transparent !important;
-  background-image: none !important;
-}
-
-/* Keep timeline styling but on light background */
-#resume .timeline-ico,
-#education .timeline-ico {
-  background: #313131 !important;   /* icon circle, per theme */ /* :contentReference[oaicite:2]{index=2} */
-  color: #fff !important;
-}
-#resume .timeline-content h4::after,
-#education .timeline-content h4::after {
-  background: rgba(0,0,0,.2) !important;                /* :contentReference[oaicite:3]{index=3} */
-}
