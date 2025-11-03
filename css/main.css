@@ -2732,3 +2732,15 @@ footer .copyright span:last-child::after {
 
 /*# sourceMappingURL=main.css.map */
 
+.project-page .project-meta {
+  margin: 0 0 1.5rem;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+.project-page .project-meta li { white-space: nowrap; }
+.project-gallery img { max-width: 100%; height: auto; margin: 0 0 1rem; display: block; }
+.project-page .button { display: inline-block; padding: .6rem 1rem; border: 1px solid #333; border-radius: 4px; text-decoration: none; }
+.project-page .button:hover { background: #333; color: #fff; }
