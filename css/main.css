@@ -2731,27 +2731,3 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-/* === Custom Override: Experience Section Dark Theme === */
-#resume.grey-section {
-  background-color: #000 !important;   /* deep black background */
-  color: #ccc !important;              /* light grey body text */
-}
-
-#resume h2,
-#resume h3,
-#resume h4 {
-  color: #f2f2f2 !important;           /* brighter headers for contrast */
-}
-
-#resume .timeline-ico i {
-  background: #222 !important;         /* subtle dark icon circle */
-  color: #f2f2f2 !important;           /* white icons for visibility */
-}
-
-#resume a {
-  color: #ddd;                         /* readable links */
-}
-#resume a:hover {
-  color: #fff;                         /* white hover state */
-}
