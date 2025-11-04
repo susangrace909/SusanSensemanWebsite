@@ -1323,7 +1323,7 @@ header .logo a {
 .menu-toggle:hover span,
 .menu-toggle:hover span::before,
 .menu-toggle:hover span::after {
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 /* is clicked */
