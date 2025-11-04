@@ -1201,9 +1201,6 @@ input[type="file"] {
  */
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   min-height: 66px;
   z-index: 600;
@@ -1212,68 +1209,15 @@ header .row {
   position: relative;
   min-height: 66px;
 }
+
 header .top-bar {
-  background-color: #ff0077; /* permanent pink bar */
-  position: relative; /* scrolls with the page */
+  display: block;
+  background: #000000;
+  min-width: 220px;
+  min-height: 66px;
+  position: absolute;
+  left: 90px;
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-  margin: 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Black menu links on the bar */
-header .main-navigation {
-  display: flex !important;         /* makes the menu visible in a row */
-  justify-content: center;          /* centers items horizontally */
-  align-items: center;              /* centers vertically */
-  gap: 2.5rem;                      /* even spacing between items */
-  background-color: #ff0077;        /* pink banner across the top */
-  padding: 12px 0;                  /* adds top/bottom breathing room */
-  margin: 0;
-  position: fixed;                  /* stays at top */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 998;                     /* sits behind the hamburger */
-  background: transparent;
-}
-
-header .main-navigation a {
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-header .main-navigation a:hover {
-  color: #fff;
-}
-
-header .main-navigation li {
-  display: inline-block;
-  list-style: none;
-}
-
-header .main-navigation a {
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  transition: color 0.3s ease;
-}
-
-header .main-navigation a:hover {
-  color: #fff;
 }
 
 header .logo {
@@ -1290,11 +1234,9 @@ header .logo a {
   border: none;
   font: 0/0 a;
   text-shadow: none;
-  color: transparent
-  /*width was 92px*/
+  color: transparent;
   width: 92px;
   height: 15px;
-  /* background: url("../images/logo.png") no-repeat center; */
   background-size: 92px 15px;
 }
 
