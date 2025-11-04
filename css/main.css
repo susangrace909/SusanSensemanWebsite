@@ -2812,7 +2812,7 @@ footer .copyright span:last-child::after {
   text-underline-offset: 3px;
 }
 
-#project a.back-link {
+header a.back-link {
   display: inline-block;
   background-color: #000;      /* black box like the menu */
   color: #ff66b3;              /* pink text */
@@ -2824,7 +2824,7 @@ footer .copyright span:last-child::after {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#project a.back-link:hover {
+header a.back-link:hover {
   background-color: #ff66b3;   /* invert on hover */
   color: #000;
   transform: translateY(-2px);
