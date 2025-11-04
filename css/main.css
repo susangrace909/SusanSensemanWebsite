@@ -2846,8 +2846,8 @@ header a.back-link,
 /* Hover and focus states */
 header a.back-link:hover,
 .nav-buttons a.button:hover {
-  background-color: #ff66b3;
-  color: #000;
+  background-color: #ff66b3 !important;  /* pink background */
+  color: #000 !important;                /* black text */
   transform: translateY(-2px);
 }
 
