@@ -1226,21 +1226,62 @@ header .top-bar {
   box-shadow: none;
 }
 
-header .top-bar:hover {
-  background-color: #ff66b3;
+/* Permanent pink header bar */
+header .top-bar {
+  background-color: #ff66b3 !important;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* pushes nav to the right */
+  padding-right: 40px;
 }
 
-header .top-bar:hover .menu-toggle span,
-header .top-bar:hover .menu-toggle span::before,
-header .top-bar:hover .menu-toggle span::after {
-  background-color: #ff66b3;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 3px;
-  border-radius: 2px;
-  position: absolute;
-  transition: all 0.3s ease;
+/* Black menu links on the bar */
+header .main-navigation {
+  display: flex !important;         /* makes the menu visible in a row */
+  justify-content: center;          /* centers items horizontally */
+  align-items: center;              /* centers vertically */
+  gap: 2.5rem;                      /* even spacing between items */
+  background-color: #ff66b3;        /* pink banner across the top */
+  padding: 12px 0;                  /* adds top/bottom breathing room */
+  margin: 0;
+  position: fixed;                  /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;                     /* sits behind the hamburger */
+}
+
+header .main-navigation a {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header .main-navigation a:hover {
+  color: #fff;
+}
+
+header .main-navigation li {
+  display: inline-block;
+  list-style: none;
+}
+
+header .main-navigation a {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: color 0.3s ease;
+}
+
+header .main-navigation a:hover {
+  color: #fff;
 }
 
 header .logo {
@@ -1334,6 +1375,7 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
   z-index: 1000;
+  display: none;
 }
 
 /* 3 horizontal pink lines */
@@ -1452,26 +1494,10 @@ body {
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width: 1024px) {
-  header .top-bar {
-    left: 60px;
-  }
-}
 @media only screen and (max-width: 768px) {
-  header .top-bar {
-    left: 50px;
+  .menu-toggle {
+    display: flex;
   }
-}
-@media only screen and (max-width: 600px) {
-  header .top-bar {
-    left: 35px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  header .top-bar {
-    left: 25px;
-  }
-}
 
 /** 
  * ===================================================================
@@ -1492,6 +1518,7 @@ body {
   display: table;
   position: relative;
   text-align: center;
+  padding-top: 80px;
 }
 .intro-overlay {
   position: absolute;
