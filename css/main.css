@@ -2804,3 +2804,12 @@ header a.back-link:focus-visible,
 #intro .intro-content h5 {
   color: #ff0077 !important;
 }
+
+#intro h5 {
+  color: #ff0077 !important;
+}
+
+#intro h1 {
+  color: #ffffff !important;
+}
+
