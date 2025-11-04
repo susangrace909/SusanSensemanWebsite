@@ -2807,3 +2807,18 @@ header a.back-link:focus-visible,
   color: #ffffff !important;
 }
 
+/* Universal style for 'More About Me' button */
+#intro .intro-content .button {
+  border: 2px solid #ff0077 !important;
+  color: #ff0077 !important;
+  background: transparent !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect — fill pink, flip text to black */
+#intro .intro-content .button:hover,
+#intro .intro-content .button:focus {
+  background-color: #ff0077 !important;
+  color: #000 !important;
+  border-color: #ff0077 !important;
+}
