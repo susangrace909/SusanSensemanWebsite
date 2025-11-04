@@ -1213,16 +1213,15 @@ header .row {
   min-height: 66px;
 }
 header .top-bar {
-  display: block;
-  background: #000000;
-  min-width: 220px;
-  min-height: 66px;
+  background: transparent; /* no large black bar */
   position: fixed;
-  /*was 90px*/
-  left: 0 !important;
-  top: 0;
-  right: auto;
+  top: 20px;      /* gives breathing room from top edge */
+  left: 20px;     /* small offset to match visual balance */
   z-index: 999;
+  min-width: auto;
+  min-height: auto;
+  display: flex;
+  align-items: center;
 }
 
 header .top-bar:hover {
@@ -1232,7 +1231,14 @@ header .top-bar:hover {
 header .top-bar:hover .menu-toggle span,
 header .top-bar:hover .menu-toggle span::before,
 header .top-bar:hover .menu-toggle span::after {
-  background-color: #000; /* keep lines visible */
+  background-color: #ff66b3;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.3s ease;
 }
 
 header .logo {
@@ -1267,10 +1273,15 @@ header .logo a {
   height: 40px;
   margin-left: 20px;
   margin-top: 13px;
-  display: block;
+  display: flex;
   position: absolute;
-  backgroun-color: transparent !important;
-  box-shadow: non !important;
+  background-color: #000;
+  box-shadow: none !important;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: all 0.2s ease;
 }
 .menu-toggle span {
   display: block;
@@ -1296,36 +1307,20 @@ header .logo a {
 .menu-toggle span::after {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 3px; /* consistent line thickness */
   background-color: inherit;
   position: absolute;
   left: 0;
-  -moz-transition-duration: 0.2s, 0.2s;
-  -o-transition-duration: 0.2s, 0.2s;
-  -webkit-transition-duration: 0.2s, 0.2s;
-  -ms-transition-duration: 0.2s, 0.2s;
-  transition-duration: 0.2s, 0.2s;
-  -moz-transition-delay: 0.2s, 0s;
-  -o-transition-delay: 0.2s, 0s;
-  -webkit-transition-delay: 0.2s, 0s;
-  -ms-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
+
 .menu-toggle span::before {
-  top: -8px;
-  -moz-transition-property: top, transform;
-  -o-transition-property: top, transform;
-  -webkit-transition-property: top, transform;
-  -ms-transition-property: top, transform;
-  transition-property: top, transform;
+  transform: translateY(-8px);
 }
+
 .menu-toggle span::after {
-  bottom: -8px;
-  -moz-transition-property: bottom, transform;
-  -o-transition-property: bottom, transform;
-  -webkit-transition-property: bottom, transform;
-  -ms-transition-property: bottom, transform;
-  transition-property: bottom, transform;
+  transform: translateY(8px);
 }
 
 /* is clicked */
@@ -1363,23 +1358,31 @@ header .logo a {
   z-index: 1000;
 }
 
-/* hamburger lines = pink (use same accent as elsewhere) */
+/* hamburger lines */
 .menu-toggle span,
 .menu-toggle span::before,
 .menu-toggle span::after {
-  background-color: #ff66b3 !important;  /* pink lines */
+  background-color: #ff66b3;   /* pink lines */
+  content: "";
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.3s ease;
 }
 
-/* Hover: invert (pink box, black lines) like your other buttons */
+/* Hover: invert (pink box, black lines) like other buttons */
 .menu-toggle:hover {
-  background-color: transparent !important;
+  background-color: #ff66b3;
   transform: translateY(-2px);
-  transition: transform .2s ease, background-color .2s ease;
+  transition: all 0.25s ease;
 }
+
 .menu-toggle:hover span,
 .menu-toggle:hover span::before,
 .menu-toggle:hover span::after {
-  background-color: #000 !important;     /* black lines on pink */
+  background-color: #000;  /* black lines on pink */
 }
 
 /* Keyboard focus: visible outline (accessibility) */
