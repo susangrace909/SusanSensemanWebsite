@@ -1778,6 +1778,43 @@ input[type="file"] {
   }
 }
 
+/* ===== EDUCATION SECTION STYLING ===== */
+#education {
+  background-color: #0e0e0e; /* subtle dark backdrop for contrast */
+  padding: 6rem 0;
+}
+
+#education .resume-header h2 {
+  color: #ff0077; /* section title - your signature pink */
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#education .timeline-header h3 {
+  color: #ffffff; /* job titles in bright white */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#education .timeline-content h4 {
+  color: #ff0077; /* school / company names in pink */
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+#education .timeline-header p,
+#education .timeline-content p {
+  color: #cccccc; /* description text in soft gray for readability */
+  line-height: 1.7;
+}
+
+#education .timeline-ico i {
+  color: #ff0077; /* make icons pink too */
+}
+
 /** 
  * ===================================================================
  * 13. portfolio - (_layout.scss)
