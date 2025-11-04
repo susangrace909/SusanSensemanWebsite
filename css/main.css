@@ -74,6 +74,7 @@ body {
   font-size: 1.7rem;
   line-height: 3rem;
   color: #6e6e6e;
+  padding-top: 66px;
 }
 
 /**
@@ -1200,7 +1201,9 @@ input[type="file"] {
  */
 header {
   position: fixed;
-  /*width was 100%*/
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   min-height: 66px;
   z-index: 600;
@@ -1214,10 +1217,12 @@ header .top-bar {
   background: #000000;
   min-width: 220px;
   min-height: 66px;
-  position: absolute;
+  position: fixed;
   /*was 90px*/
   left: 0 !important;
   top: 0;
+  right: auto;
+  z-index: 999;
 }
 header .logo {
   float: left;
