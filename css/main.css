@@ -1213,27 +1213,18 @@ header .row {
   min-height: 66px;
 }
 header .top-bar {
-  background: transparent !important;/* no large black bar */
-  position: fixed;
-  top: 0;      /* gives breathing room from top edge */
-  left: 0;     /* small offset to match visual balance */
+  background-color: #ff0077; /* permanent pink bar */
+  position: relative; /* scrolls with the page */
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
-  min-width: auto;
-  min-height: auto;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  box-shadow: none;
-}
-
-/* Permanent pink header bar */
-header .top-bar {
-  background-color: #ff66b3 !important;
-  height: 66px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end; /* pushes nav to the right */
-  padding-right: 40px;
+  padding: 1rem 0;
+  margin: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Black menu links on the bar */
@@ -1250,6 +1241,7 @@ header .main-navigation {
   left: 0;
   width: 100%;
   z-index: 998;                     /* sits behind the hamburger */
+  background: transparent;
 }
 
 header .main-navigation a {
@@ -1361,8 +1353,8 @@ body {
  */
 
 .menu-toggle {
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  top: 10px;
   left: 20px;
   width: 48px;
   height: 48px;
