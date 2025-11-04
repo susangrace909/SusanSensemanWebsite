@@ -1441,7 +1441,7 @@ header .logo a {
   .intro-content h1 {
     font-size: 5.2rem;
   }
-  
+
 /* Force "HELLO THERE!" to use pink */
 #intro .intro-content h5 {
   color: #ff0077 !important;
@@ -2798,4 +2798,9 @@ header a.back-link:focus-visible,
 
 .main-navigation li.current > a {
   color: #ff0077;
+}
+
+/* Force pink color on intro h5 (Hello There) across all screen sizes */
+#intro .intro-content h5 {
+  color: #ff0077 !important;
 }
