@@ -2744,3 +2744,33 @@ footer .copyright span:last-child::after {
 .project-gallery img { max-width: 100%; height: auto; margin: 0 0 1rem; display: block; }
 .project-page .button { display: inline-block; padding: .6rem 1rem; border: 1px solid #333; border-radius: 4px; text-decoration: none; }
 .project-page .button:hover { background: #333; color: #fff; }
+
+/* Make portfolio overlays clickable */
+.item-wrap {
+  position: relative;
+}
+
+.item-wrap a.overlay-link {
+  display: block;
+  position: relative;
+  z-index: 10; /* ensures it's above the image */
+}
+
+.item-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  position: relative;
+}
+
+/* Remove pointer-blocking on overlay elements if needed */
+.item-wrap .folio-item-table,
+.item-wrap .folio-item-cell {
+  pointer-events: none;
+}
+
+/* But allow clicks through the <a> */
+.item-wrap a.overlay-link {
+  pointer-events: auto;
+}
