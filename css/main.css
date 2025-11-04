@@ -1233,7 +1233,7 @@ header .main-navigation {
   justify-content: center;          /* centers items horizontally */
   align-items: center;              /* centers vertically */
   gap: 2.5rem;                      /* even spacing between items */
-  background-color: #ff66b3;        /* pink banner across the top */
+  background-color: #ff0077;        /* pink banner across the top */
   padding: 12px 0;                  /* adds top/bottom breathing room */
   margin: 0;
   position: fixed;                  /* stays at top */
@@ -1304,7 +1304,7 @@ header .logo a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ff66b3;
+  background-color: #ff0077;
   color: #000;
   z-index: 800; /* just below hamburger */
   display: flex;
@@ -1376,7 +1376,7 @@ body {
 .menu-toggle span::after {
   content: "";
   display: block;
-  background-color: #ff66b3;
+  background-color: #ff0077;
   width: 24px;
   height: 3px;
   border-radius: 2px;
@@ -1398,7 +1398,7 @@ body {
 
 /* Hover: reverse colors */
 .menu-toggle:hover {
-  background-color: #ff66b3;
+  background-color: #ff0077;
   transform: translateY(-2px);
 }
 
@@ -1423,7 +1423,7 @@ body {
 
 /* Keyboard focus: visible outline (accessibility) */
 .menu-toggle:focus-visible {
-  outline: 2px solid #ff66b3;
+  outline: 2px solid #ff0077;
   outline-offset: 2px;
 }
 
@@ -1472,13 +1472,13 @@ body {
 
 /* Hover effect */
 .main-navigation li a:hover {
-  color: #ff66b3;
+  color: #ff0077;
   padding-left: 10px;
 }
 
 /* Active link */
 .main-navigation li.current > a {
-  color: #ff66b3;
+  color: #ff0077;
 }
 
 /**
@@ -2939,7 +2939,7 @@ header a.back-link:hover,
 
 header a.back-link:focus-visible,
 .nav-buttons a.button:focus-visible {
-  outline: 2px solid #ff66b3;
+  outline: 2px solid #ff0077;
   outline-offset: 2px;
 }
 
