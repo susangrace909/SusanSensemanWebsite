@@ -2774,3 +2774,26 @@ footer .copyright span:last-child::after {
 .item-wrap a.overlay-link {
   pointer-events: auto;
 }
+
+#project h1 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+#project h1::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  background-color: #ff66b3; /* your pink accent */
+  border-radius: 2px;
+}
+
+#project a:hover {
+  color: #ff66b3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
