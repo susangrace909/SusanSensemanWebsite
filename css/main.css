@@ -1207,11 +1207,11 @@ input[type="file"] {
 
 .menu-toggle {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px;
   width: 48px;
   height: 48px;
-  background-color: #000; /* black square button */
+  background-color: #000; /* black square */
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1220,58 +1220,53 @@ input[type="file"] {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
   z-index: 1000;
-  display: flex;
 }
 
-/* 3 horizontal pink lines */
+/* hamburger lines */
 .menu-toggle span,
 .menu-toggle span::before,
 .menu-toggle span::after {
   content: "";
-  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ff0077;
   width: 24px;
   height: 3px;
   border-radius: 2px;
   transition: all 0.3s ease;
-  position: relative;
 }
 
+/* top and bottom lines */
 .menu-toggle span::before {
-  position: absolute;
   top: -8px;
-  left: 0;
 }
-
 .menu-toggle span::after {
-  position: absolute;
   top: 8px;
-  left: 0;
 }
 
-/* Hover: reverse colors */
+/* Hover effects */
 .menu-toggle:hover {
   background-color: #ff0077;
   transform: translateY(-2px);
 }
-
-/* Reverse colors on hover */
 .menu-toggle:hover span,
 .menu-toggle:hover span::before,
 .menu-toggle:hover span::after {
-  background-color: #000 !important;
+  background-color: #000;
 }
 
-/* is clicked */
+/* Clicked (X) state */
 .menu-toggle.is-clicked span {
-  background-color: rgba(255, 0, 119, 0);
+  background-color: transparent;
 }
-
 .menu-toggle.is-clicked span::before {
-  transform: rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  top: 0;
 }
 .menu-toggle.is-clicked span::after {
-  transform: rotate(-45deg);
+  transform: translateX(-50%) rotate(-45deg);
+  top: 0;
 }
 
 /* Keyboard focus: visible outline (accessibility) */
