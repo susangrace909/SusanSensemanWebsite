@@ -1265,6 +1265,55 @@ header .logo a {
   background-size: 92px 15px;
 }
 
+/* === Pink Top Banner Navigation === */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff66b3;
+  color: #000;
+  z-index: 800; /* just below hamburger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.top-banner ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.top-banner a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.top-banner a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Ensure main content sits below banner */
+body {
+  padding-top: 70px; /* pushes content below fixed banner */
+}
+
+/* Hide banner when menu is open on mobile */
+@media (max-width: 768px) {
+  .top-banner {
+    display: none;
+  }
+}
+
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
