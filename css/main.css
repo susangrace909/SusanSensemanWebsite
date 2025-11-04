@@ -1336,6 +1336,40 @@ header .logo a {
   transform: rotate(-45deg);
 }
 
+/* === Unify homepage menu button with project buttons === */
+.menu-toggle {
+  background-color: #000 !important;     /* black box */
+  border-radius: 6px;                    /* rounded corners to match */
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+  line-height: 0;                        /* trims extra vertical space */
+  z-index: 1000;
+}
+
+/* hamburger lines = pink (use same accent as elsewhere) */
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+  background-color: #ff66b3 !important;  /* pink lines */
+}
+
+/* Hover: invert (pink box, black lines) like your other buttons */
+.menu-toggle:hover {
+  background-color: #ff66b3 !important;
+  transform: translateY(-2px);
+  transition: transform .2s ease, background-color .2s ease;
+}
+.menu-toggle:hover span,
+.menu-toggle:hover span::before,
+.menu-toggle:hover span::after {
+  background-color: #000 !important;     /* black lines on pink */
+}
+
+/* Keyboard focus: visible outline (accessibility) */
+.menu-toggle:focus-visible {
+  outline: 2px solid #ff66b3;
+  outline-offset: 2px;
+}
+
 /* navigation panel */
 #main-nav-wrap {
   display: block;
