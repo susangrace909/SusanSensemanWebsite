@@ -2829,3 +2829,23 @@ header a.back-link:hover {
   color: #000;
   transform: translateY(-2px);
 }
+
+/* Directional navigation buttons at bottom of project pages */
+.nav-buttons a {
+  display: inline-block;
+  background-color: #000;      /* black box */
+  color: #ff66b3;              /* pink text */
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons a:hover {
+  background-color: #ff66b3;   /* invert on hover */
+  color: #000;
+  transform: translateY(-2px);
+}
