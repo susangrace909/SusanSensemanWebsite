@@ -1270,46 +1270,51 @@ header .logo a {
 
 .menu-toggle {
   position: fixed;
-  top: 20px;             /* distance from top of viewport */
-  left: 20px;            /* distance from left edge */
-  width: 48px;           /* slightly larger for breathing room */
+  top: 20px;
+  left: 20px;
+  width: 48px;
   height: 48px;
-  background-color: #000;
-  border-radius: 8px;    /* smooth corners */
-  display: flex;         /* centers the lines */
-  align-items: center;   /* centers vertically */
-  justify-content: center; /* centers horizontally */
+  background-color: #000; /* black square button */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
   z-index: 1000;
 }
 
-/* Hover: invert (pink background, black lines) */
-.menu-toggle:hover {
-  background-color: #ff66b3;
-  transform: translateY(-2px);
-}
-
-/* Center the hamburger lines nicely */
+/* 3 horizontal pink lines */
 .menu-toggle span,
 .menu-toggle span::before,
 .menu-toggle span::after {
+  content: "";
   display: block;
   background-color: #ff66b3;
   width: 24px;
   height: 3px;
   border-radius: 2px;
-  position: absolute;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .menu-toggle span::before {
-  transform: translateY(-8px);
+  position: absolute;
+  top: -8px;
+  left: 0;
 }
 
 .menu-toggle span::after {
-  transform: translateY(8px);
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+/* Hover: reverse colors */
+.menu-toggle:hover {
+  background-color: #ff66b3;
+  transform: translateY(-2px);
 }
 
 /* Reverse colors on hover */
