@@ -42,16 +42,15 @@
     <header>
       <div class="menu-toggle">
         <span></span>
-        <span></span>
-        <span></span>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li><a class="smoothscroll" href="#intro">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About</a></li>
-          <li><a class="smoothscroll" href="#resume">Resume</a></li>
-          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+          <li><a class="smoothscroll" href="#intro" title="">Home</a></li>
+          <li><a class="smoothscroll" href="#about" title="">About</a></li>
+          <li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -1271,14 +1270,15 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js?v=3"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.querySelector(".menu-toggle");
-        const mainNav = document.querySelector(".main-navigation");
+        const mainNav = document.querySelector("#main-nav-wrap");
 
         if (menuToggle && mainNav) {
-          menuToggle.addEventListener("click", function() {
-            mainNav.classList.toggle("active");
+          menuToggle.addEventListener("click", function () {
             menuToggle.classList.toggle("is-clicked");
+            mainNav.classList.toggle("active");
+
             if (mainNav.classList.contains("active")) {
               mainNav.style.display = "block";
             } else {
@@ -1287,6 +1287,6 @@
           });
         }
       });
-</script>
+    </script>
   </body>
 </html>
