@@ -2831,6 +2831,7 @@ footer .copyright span:last-child::after {
 /* Consistent black-box buttons — top link + bottom nav */
 header a.back-link,
 .nav-buttons a.button {
+  font-family: "Poppins", sans-serif;
   display: inline-block;
   background-color: #000;
   color: #ff66b3;
