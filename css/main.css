@@ -1422,6 +1422,30 @@ input[type="file"] {
   .intro-content .intro-position {
     font-size: 1.3rem;
   }
+
+  /* 🔘 "More About Me" button — outlined pink, fills on hover */
+.intro-content .button {
+  color: #ff0077 !important;                 /* pink text */
+  background-color: transparent !important;  /* transparent background */
+  border: 2px solid #ff0077 !important;      /* pink outline */
+  height: 6rem !important;
+  line-height: 5.4rem !important;
+  padding: 0 3.5rem 0 3rem !important;
+  margin-top: 0.6rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+/* hover effect — fills pink, flips text to black */
+.intro-content .button:hover,
+.intro-content .button:focus {
+  background-color: #ff0077 !important;  /* fill with pink */
+  color: #000 !important;                /* black text */
+  border-color: #ff0077 !important;      /* keep pink border */
+}
+
   .intro-social {
     font-size: 2.5rem;
   }
