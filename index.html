@@ -39,6 +39,22 @@
 
   <body id="top">
 
+    <header>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a class="smoothscroll" href="#intro">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- intro section
    ================================================== -->
@@ -1255,17 +1271,22 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js?v=3"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mainNav = document.querySelector(".main-navigation");
+      document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const mainNav = document.querySelector(".main-navigation");
 
-    if (menuToggle && mainNav) {
-      menuToggle.addEventListener("click", function() {
-        mainNav.classList.toggle("active");
-        menuToggle.classList.toggle("is-clicked");
+        if (menuToggle && mainNav) {
+          menuToggle.addEventListener("click", function() {
+            mainNav.classList.toggle("active");
+            menuToggle.classList.toggle("is-clicked");
+            if (mainNav.classList.contains("active")) {
+              mainNav.style.display = "block";
+            } else {
+              mainNav.style.display = "none";
+            }
+          });
+        }
       });
-    }
-  });
 </script>
   </body>
 </html>
