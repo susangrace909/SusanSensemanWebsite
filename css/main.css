@@ -74,7 +74,6 @@ body {
   font-size: 1.7rem;
   line-height: 3rem;
   color: #6e6e6e;
-  padding-top: 66px;
 }
 
 /**
@@ -1199,36 +1198,7 @@ input[type="file"] {
  *
  * ------------------------------------------------------------------- 
  */
-header {
-  position: fixed;
-  width: 100%;
-  min-height: 66px;
-  z-index: 600;
-}
-header .row {
-  position: relative;
-  min-height: 66px;
-}
 
-header .logo {
-  float: left;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-top: 25px;
-  position: relative;
-}
-header .logo a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  width: 92px;
-  height: 15px;
-  background-size: 92px 15px;
-}
 
 /**
  * menu toggle - (_layout.css)
