@@ -2857,3 +2857,8 @@ header a.back-link:focus-visible,
   outline: 2px solid #ff66b3;
   outline-offset: 2px;
 }
+
+/* 🚫 Remove outline on hover (bottom buttons only) */
+.nav-buttons a.button:hover {
+  outline: none !important;
+}
