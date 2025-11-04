@@ -1224,6 +1224,17 @@ header .top-bar {
   right: auto;
   z-index: 999;
 }
+
+header .top-bar:hover {
+  background-color: #ff66b3;
+}
+
+header .top-bar:hover .menu-toggle span,
+header .top-bar:hover .menu-toggle span::before,
+header .top-bar:hover .menu-toggle span::after {
+  background-color: #000; /* keep lines visible */
+}
+
 header .logo {
   float: left;
   margin-left: 20px;
