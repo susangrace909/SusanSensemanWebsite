@@ -1210,16 +1210,6 @@ header .row {
   min-height: 66px;
 }
 
-header .top-bar {
-  display: block;
-  background: #000000;
-  min-width: 220px;
-  min-height: 66px;
-  position: absolute;
-  left: 90px;
-  top: 0;
-}
-
 header .logo {
   float: left;
   margin-left: 20px;
@@ -1238,13 +1228,6 @@ header .logo a {
   width: 92px;
   height: 15px;
   background-size: 92px 15px;
-}
-
-/* Hide banner when menu is open on mobile */
-@media (max-width: 768px) {
-  .top-banner {
-    display: none;
-  }
 }
 
 /**
