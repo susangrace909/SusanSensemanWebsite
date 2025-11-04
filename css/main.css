@@ -1213,15 +1213,17 @@ header .row {
   min-height: 66px;
 }
 header .top-bar {
-  background: transparent; /* no large black bar */
+  background: transparent !important;/* no large black bar */
   position: fixed;
-  top: 20px;      /* gives breathing room from top edge */
-  left: 20px;     /* small offset to match visual balance */
+  top: 0;      /* gives breathing room from top edge */
+  left: 0;     /* small offset to match visual balance */
   z-index: 999;
   min-width: auto;
   min-height: auto;
-  display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
 }
 
 header .top-bar:hover {
