@@ -2792,7 +2792,7 @@ header a.back-link:focus-visible,
 
 /* === FIX Dropdown Menu Layout === */
 .main-navigation {
-  display: flex;
+  display: none; /* start hidden */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2804,8 +2804,10 @@ header a.back-link:focus-visible,
   left: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 9999;
 }
 
+/* visible when toggled */
 .main-navigation.active {
   display: flex !important;
 }
