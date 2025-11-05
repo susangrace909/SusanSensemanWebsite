@@ -1273,11 +1273,15 @@
         const mainNav = document.querySelector(".main-navigation");
 
         if (menuToggle && mainNav) {
+          console.log("✅ Menu found:", mainNav); // debug line
           menuToggle.addEventListener("click", function (e) {
             e.preventDefault();
             const isActive = mainNav.classList.toggle("active");
             menuToggle.classList.toggle("is-clicked", isActive);
+            console.log("🔄 Menu toggled. Active:", isActive); // debug line
           });
+        } else {
+          console.log("❌ Menu toggle or nav not found!");
         }
       });
     </script>
