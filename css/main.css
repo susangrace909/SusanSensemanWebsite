@@ -1275,19 +1275,12 @@ input[type="file"] {
   outline-offset: 2px;
 }
 
-/* navigation panel */
+/* === Fix Dropdown Visibility === */
 #main-nav-wrap {
-  display: none;
-  background: transparent !important;
   position: absolute;
-  width: 100%;
-  font-family: "poppins-medium", sans-serif;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 66px;
-  left: 0;
-  z-index: 998;
-  box-shadow: none;
+  top: 70px;
+  left: 20px;
+  z-index: 9999;
 }
 
 /* Dropdown nav menu */
@@ -2790,43 +2783,37 @@ header a.back-link:focus-visible,
   outline-offset: 2px;
 }
 
-/* === FIX Dropdown Menu Layout === */
+/* Default: hidden */
 .main-navigation {
-  display: none; /* start hidden */
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   background: #000;
   padding: 24px 30px 42px;
-  width: 240px;          /* standard dropdown width */
-  position: absolute;
-  top: 70px;             /* directly below hamburger */
-  left: 20px;
+  width: 240px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-  z-index: 9999;
 }
 
-/* visible when toggled */
+/* Show when active */
 .main-navigation.active {
   display: flex !important;
 }
 
+/* Menu item styles */
 .main-navigation li {
-  display: block;
-  width: 100%;
-  text-align: left;
-  margin: 6px 0;
   list-style: none;
+  width: 100%;
+  margin: 6px 0;
 }
 
 .main-navigation li a {
-  display: block;
   color: #fff;
+  display: block;
   padding: 12px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.5px;
   text-decoration: none;
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
