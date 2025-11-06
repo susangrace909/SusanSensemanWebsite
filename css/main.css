@@ -1371,7 +1371,7 @@ input[type="file"] {
   display: table;
   position: relative;
   text-align: center;
-  padding-top: 0;
+  padding-top: 120px;
 
   margin-top: 66px;
   overflow: hidden;
