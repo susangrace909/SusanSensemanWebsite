@@ -745,6 +745,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   background: #313131;
   color: #ffffff;
+  border: 3px solid #313131;
+  transition: all 0.3s ease-in-out;
 }
 .button.button-primary:hover,
 a.button.button-primary:hover,
@@ -757,7 +759,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background: #1f1f1f;
+  background: transparent;
+  color: #ff0077;
+  border-color: #ff0077;
 }
 button.full-width,
 .button.full-width {
@@ -780,6 +784,8 @@ button.stroke,
 .button.stroke {
   background: transparent !important;
   border: 3px solid #313131;
+  color: #313131;
+  transition: all 0.3s ease-in-out;
   line-height: 4.8rem;
 }
 button.stroke.medium,
@@ -792,8 +798,9 @@ button.stroke.large,
 }
 button.stroke:hover,
 .button.stroke:hover {
-  border: 3px solid #ff0077;
-  color: #ff0077;
+  border-color: 3px solid #ff0077;
+  color: #fff;
+  background: #ff0077;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
