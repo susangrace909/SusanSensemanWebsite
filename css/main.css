@@ -2924,3 +2924,12 @@ header a.back-link:focus-visible,
   border: 3px solid #B4D6B9 !important;  /* pink border */
   color: #ffffff !important;             /* white text */
 }
+
+header {
+  background: transparent !important; /* removes the black bar */
+  height: 0 !important;               /* collapses empty space */
+  overflow: visible !important;       /* ensures menu toggle still shows */
+  position: absolute;                 /* allows hero to reach the very top */
+  width: 100%;
+  z-index: 1000;
+}
