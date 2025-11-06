@@ -1284,10 +1284,10 @@ input[type="file"] {
 
 /* === Fix Dropdown Visibility === */
 #main-nav-wrap {
-  position: fixed;
-  top: 70px;
-  left: 20px;
-  z-index: 9999;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  background: transparent; /* changed from rgba(0, 0, 0, 0.95) */
 }
 
 /* Dropdown nav menu */
@@ -1338,9 +1338,10 @@ input[type="file"] {
   background: rgba(0, 0, 0, 0.95);
 }
 
-/* When active, smoothly expand */
+/* When active, smoothly expand with dark background */
 #main-nav-wrap.active {
   max-height: 300px;
+  background: rgba(0, 0, 0, 0.95); /* keep the dark background only when open */
 }
 
 /**
