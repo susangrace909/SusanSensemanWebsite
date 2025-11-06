@@ -2506,6 +2506,18 @@ input[type="file"] {
   color: #B4D6B9;
 }
 
+.row.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* optional spacing between columns */
+}
+
+.row.contact-info .col-four {
+  flex: 1 1 22%; /* four even columns (≈25% each minus padding) */
+  text-align: center;
+}
+
 /**
  * loader animation - (_layout.scss)
  * --------------------------------------------------------------- 
