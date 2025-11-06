@@ -798,7 +798,7 @@ button.stroke.large,
 }
 button.stroke:hover,
 .button.stroke:hover {
-  border-color: 3px solid #ff0077;
+  border: 3px solid #ff0077;
   color: #fff;
   background: #ff0077;
 }
