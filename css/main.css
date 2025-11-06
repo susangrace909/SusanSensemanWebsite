@@ -759,9 +759,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background: transparent;
-  color: #B4D6B9;
-  border-color: #B4D6B9;
+  background: #E5D1A1;
+  color: #2F2F2F;
+  border-color: #E5D1A1;
 }
 button.full-width,
 .button.full-width {
@@ -1163,12 +1163,10 @@ input[type="file"] {
   line-height: 1.25;
   margin-bottom: 1.2rem;
 }
-.section-intro h5 {
-  color: #B4D6B9;
-  font-size: 1.6rem;
-  line-height: 1.875;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.4rem;
+.section-intro h5,
+h2 span,
+footer a:hover {
+  color: #E5D1A1; /* gold-beige accent text */
 }
 
 /**
@@ -2898,7 +2896,7 @@ header a.back-link:focus-visible,
 /* Final override — Hire Me button hover fix */
 .button.stroke:hover,
 .button.stroke:focus {
-  background-color: #B4D6B9 !important; /* fill pink */
-  border: 3px solid #B4D6B9 !important;  /* pink border */
-  color: #ffffff !important;             /* white text */
+  background-color: #A9CDB2 !important; /* fill pink */
+  border: 3px solid #A9CDB2 !important;  /* pink border */
+  color: #2F2F2F !important;             /* white text */
 }
