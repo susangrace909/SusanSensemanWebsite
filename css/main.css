@@ -2709,6 +2709,15 @@ footer .copyright span:last-child::after {
 /* Make portfolio overlays clickable */
 .item-wrap {
   position: relative;
+  border: 2px solid #343434;       /* Deep Charcoal border */
+  border-radius: 6px;              /* soft corners for polish */
+  overflow: hidden;                /* keeps overlay tidy inside */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* subtle hover depth */
 }
 
 .item-wrap a.overlay-link {
