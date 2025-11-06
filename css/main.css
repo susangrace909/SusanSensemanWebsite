@@ -2924,3 +2924,17 @@ header a.back-link:focus-visible,
   border: 3px solid #B4D6B9 !important;  /* pink border */
   color: #ffffff !important;             /* white text */
 }
+
+/* Remove persistent black bar at top */
+#main-nav-wrap {
+  background: transparent !important;
+  max-height: 0 !important;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+/* Keep dropdown dark when open */
+#main-nav-wrap.active {
+  background: rgba(0, 0, 0, 0.95) !important;
+  max-height: 300px !important;
+}
