@@ -2710,7 +2710,6 @@ footer .copyright span:last-child::after {
 .item-wrap {
   position: relative;
   border: 2px solid #343434;       /* Deep Charcoal border */
-  border-radius: 6px;              /* soft corners for polish */
   overflow: hidden;                /* keeps overlay tidy inside */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
