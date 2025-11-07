@@ -3000,3 +3000,52 @@ header a.back-link:focus-visible,
   border-radius: 10px;
   margin: 2rem 0;
 }
+
+/* === Project Intro Section Fix === */
+.project-page .section-intro {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #313131;
+  margin-bottom: 2rem;
+}
+
+.project-page .section-intro h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #111;
+  border-bottom: 3px solid #A9CDB2; /* eucalyptus underline */
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-page .section-intro p.lead {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #333;
+  margin: 0.75rem auto 1.5rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.project-page .project-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.project-page .project-meta li {
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.project-page .project-meta strong {
+  color: #111;
+  font-weight: 600;
+}
