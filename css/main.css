@@ -1167,12 +1167,12 @@ input[type="file"] {
 .section-intro h1::after,
 #project h3::after {
   content: "";
-  display: block;
+  display: inline-block;
   height: 3px;
   width: 100%; /* full width of the text above */
-  max-width: fit-content; /* keeps it tight to the word, not container */
   background: #9FBCA1;
-  margin: 10px auto 0;
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .section-intro h5 {
