@@ -2785,10 +2785,37 @@ footer .copyright span:last-child::after {
 #project .section-intro {
   max-width: 980px;
   margin-inline: auto;
+  text-align: center;
+}
+
+
+#project .section-intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #B4D6B9; /* your eucalyptus accent */
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+#project .section-intro p.lead {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
 }
 
 #project h1 {
   margin-bottom: 1rem;
+}
+
+/* Add spacing before video/demo section */
+#project h3 {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 #project .lead {
@@ -2801,6 +2828,25 @@ footer .copyright span:last-child::after {
   color: #B4D6B9;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+#project .project-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  color: #444;
+}
+
+#project .project-meta li {
+  font-weight: 600;
+}
+
+#project .project-meta li strong {
+  color: #222;
 }
 
 /* Consistent black-box buttons — top link + bottom nav */
