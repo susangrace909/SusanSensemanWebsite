@@ -2878,6 +2878,10 @@ footer .copyright span:last-child::after {
 
 #project .project-meta li {
   font-weight: 400;
+  font-size: 1.05rem;   /* make the text a little larger */
+  color: #222;          /* darken for contrast */
+  display: inline-block;
+  margin-right: 30px;
 }
 
 #project .project-meta li strong {
