@@ -1973,11 +1973,11 @@ input[type="file"] {
   }
 }
 
-/**
+/* /**
  * Popup Modal - (_layout.scss)
  * ------------------------------------------------------------------
  */
-.popup-modal {
+/* .popup-modal {
   max-width: 550px;
   background: #ffffff;
   position: relative;
@@ -2049,7 +2049,7 @@ input[type="file"] {
     width: auto;
     margin: 0 20px;
   }
-}
+} */ */
 
 /**
  * transition effect for modal popup - (_layout.scss)
