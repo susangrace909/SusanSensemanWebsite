@@ -3060,6 +3060,30 @@ header a.back-link:focus-visible,
   letter-spacing: -0.02rem;
 }
 
+/* === Subsection Headings Underline Accent (smaller + refined) === */
+.project-page h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-family: "poppins-semibold", sans-serif;
+  color: #313131;
+  font-size: 1.5rem; /* matches your scale better */
+  letter-spacing: 0.3px;
+}
+
+.project-page h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 40%;              /* narrower for elegance */
+  height: 2px;             /* thinner than the main title’s underline */
+  background-color: #B4D6B9; /* eucalyptus accent */
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
 .project-page p,
 .project-page li {
   font-family: "lora-regular", serif;
