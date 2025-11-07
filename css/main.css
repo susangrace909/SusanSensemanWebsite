@@ -2720,6 +2720,18 @@ footer .copyright span:last-child::after {
   padding: 0;
 }
 
+/* === Lead paragraph (subtitle under page title) === */
+.lead {
+  font-size: 1.25rem;         /* bigger and easier to read */
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;                /* neutral dark grey */
+  text-align: center;
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem; /* nice vertical balance */
+  font-family: "poppins-regular", sans-serif;
+}
+
 /* Subtitle under main header Role, Tools, Date*/
 .project-page .lead {
   font-size: 3rem;          /* bump it up for readability */
