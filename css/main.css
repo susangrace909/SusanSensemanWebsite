@@ -2975,3 +2975,28 @@ header a.back-link:focus-visible,
   border: 3px solid #B4D6B9 !important;  /* pink border */
   color: #ffffff !important;             /* white text */
 }
+
+/* === Video Section Fix === */
+#video-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins-regular", sans-serif; /* restores normal text font */
+}
+
+#video-section h2,
+#video-section p {
+  color: #313131;
+  text-align: center;
+}
+
+#video-section iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
