@@ -2857,7 +2857,15 @@ footer .copyright span:last-child::after {
   text-align: center;
   font-weight: 600;
 }
-
+#project h3::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #A9CDB2; /* eucalyptus green */
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 2px;
+}
 #project .lead {
   margin-top: 0.25rem;
   line-height: 1.55;
