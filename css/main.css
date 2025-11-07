@@ -1163,6 +1163,18 @@ input[type="file"] {
   line-height: 1.25;
   margin-bottom: 1.2rem;
 }
+
+.section-intro h1::after,
+#project h3::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%; /* full width of the text above */
+  max-width: fit-content; /* keeps it tight to the word, not container */
+  background: #9FBCA1;
+  margin: 10px auto 0;
+}
+
 .section-intro h5 {
   color: #B4D6B9;
   font-size: 1.6rem;
