@@ -2719,6 +2719,17 @@ footer .copyright span:last-child::after {
   list-style: none;
   padding: 0;
 }
+
+/* Subtitle under main header */
+.project-page .lead {
+  font-size: 2rem;          /* bump it up for readability */
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5em;
+  text-shadow: none;
+}
 .project-page .project-meta li { white-space: nowrap; }
 .project-gallery img { max-width: 100%; height: auto; margin: 0 0 1rem; display: block; }
 .project-page .button { display: inline-block; padding: .6rem 1rem; border: 1px solid #333; border-radius: 4px; text-decoration: none; }
