@@ -139,6 +139,29 @@
       </div>
     </div>
   </footer>
+<script>
+  // Create lightbox dynamically
+  const lightbox = document.createElement('div');
+  lightbox.classList.add('lightbox');
+  lightbox.innerHTML = '<span class="close-lightbox">&times;</span><img class="lightbox-content">';
+  document.body.appendChild(lightbox);
+
+  const images = document.querySelectorAll('.project-gallery img');
+  const lightboxImg = document.querySelector('.lightbox-content');
+  const close = document.querySelector('.close-lightbox');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  close.addEventListener('click', () => lightbox.style.display = 'none');
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) lightbox.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
