@@ -3225,3 +3225,10 @@ header a.back-link:focus-visible,
   color: #000;
   font-family: "poppins-semibold", sans-serif;
 }
+/* Disable lightbox behavior for portfolio thumbnails */
+.folio-item .lightbox,
+.folio-item .lightbox-content,
+.folio-item .close-lightbox {
+  display: none !important;
+  visibility: hidden !important;
+}
