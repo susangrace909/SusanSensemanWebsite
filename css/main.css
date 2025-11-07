@@ -2849,8 +2849,13 @@ footer .copyright span:last-child::after {
 
 /* Add spacing before video/demo section */
 #project h3 {
+  position: relative;
+  display: inline-block;
   margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.3rem;
   text-align: center;
+  font-weight: 600;
 }
 
 #project .lead {
