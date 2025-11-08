@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sales Dashboard — Susan Senseman</title>
+  <title>Live Market & Trend Feed — Automated API Pipeline</title>
   <meta name="description" content="Interactive Power BI sales dashboard: trend analysis, cohort views, and KPI drilldowns.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../../css/base.css" rel="stylesheet">
@@ -21,69 +21,102 @@
   <main id="project" class="project-page grey-section">
     <div class="row section-intro">
       <div class="col-twelve">
-        <h1>Sales Dashboard</h1>
-        <p class="lead">Turning monthly sales data into an interactive, decision-ready dashboard.</p>
+        <h1>Live Market & Trend Feed — Automated API Pipeline (Coming Soon...)</h1>
+        <p class="lead">Coming Soon!
+        </p>
 
         <ul class="project-meta">
-          <li><strong>Role:</strong> Data Analyst</li>
-          <li><strong>Tools:</strong> Power BI, SQL, Python (pandas), Excel</li>
-          <li><strong>Date:</strong> 2024</li>
-          <li><strong>Links:</strong>
-            <a href="https://app.powerbi.com/...">Live Demo</a> ·
-            <a href="https://github.com/yourrepo/sales-dashboard">GitHub</a>
-          </li>
+          <li><strong>Role: Data Analyst</strong></li>
+          <li><strong>Tools: </strong></li>
+          <li><strong>Date: 2025</strong></li>
         </ul>
       </div>
     </div>
 
-    <div class="row">
+        <!-- Project Video ------------------------------------------------------------------------------------>
+      <section id="video-section">
+        <div class="row project-media" style="margin-top: 3rem;">
+          <div class="col-twelve">
+            <h3>Watch the Dashboard Demo</h3>
+            <div class="video-wrapper">
+              <iframe 
+                src="https://www.youtube.com/embed/H04fn8UC7ysE" 
+                title="Retail & Sales KPI Dashboard Demo — Susan Senseman"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            <p class="desc">
+              Coming soon!
+            </p>
+          </div>
+        </div>
+      </section>
+        <!-------------------------------------------------------------------------------------------------------->
+
+
+        
+
+    <!-- <div class="row">
       <div class="col-twelve">
-        <img src="hero.png" alt="Sales dashboard hero image" style="max-width:100%;height:auto;">
+        <img src="full-dashboard.png" alt="Sales dashboard hero image" style="max-width:100%;height:auto;">
       </div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="col-six tab-full">
         <h3>Problem</h3>
-        <p>Leadership needed a single source of truth for revenue, margins, and regional performance with drilldowns by product and customer segment.</p>
+        <p>Coming soon!</p>
       </div>
       <div class="col-six tab-full">
         <h3>Approach</h3>
-        <p>Cleaned and modeled data (SQL + Python), designed a star schema for BI, and built a Power BI dashboard with DAX measures (YoY, MoM, cohort retention).</p>
+        <p>Coming soon!</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-six tab-full">
         <h3>Outcome</h3>
-        <p>Reduced manual reporting time by 70% and surfaced actionable insights (e.g., underperforming SKUs by region), guiding quarterly pricing and inventory decisions.</p>
+        <p>Coming soon!</p>
       </div>
       <div class="col-six tab-full">
         <h3>Highlights</h3>
         <ul>
-          <li>KPI cards and drill-through pages</li>
-          <li>Bookmark-based “what-if” scenarios</li>
-          <li>Row-level security for regional managers</li>
+          <li>Coming soon!</li>
+          <li>Coming soon!</li>
+          <li>Coming soon!</li>
+          <li>Coming soon!</li>
         </ul>
       </div>
     </div>
 
     <!-- Optional gallery -->
-    <div class="row nav-buttons">
+    <div class="row">
       <div class="col-twelve">
         <h3>Screens</h3>
         <div class="project-gallery">
-          <img src="screen-1.png" alt="Overview page">
-          <img src="screen-2.png" alt="Product deep dive">
-          <img src="screen-3.png" alt="Regional trends">
+          <img src="kpi-overview.png" alt="KPI Overview Page">
+          <img src="regional-insights.png" alt="Regional Insights">
+          <img src="full-dashboard.png" alt="Full Dashboard">
         </div>
+      </div>
+    </div>
+
+    <!-- Project PDF -->
+    <div class="row project-media" style="margin-top: 3rem;">
+      <div class="col-twelve">
+        <p style="margin-top: 1.5rem;">
+          <a href="retail-and-sales-kpi-dashboard.pdf" class="button button-primary" download>
+            Download Dashboard PDF
+          </a>
+        </p>
       </div>
     </div>
 
     <!-- Prev/Next navigation -->
     <div class="row nav-buttons">
       <div class="col-six tab-full">
-        <a href="../dataProject5/index.html" class="button">← Previous</a>
+        <a href="../dataProject5/index.html/" class="button">← Previous</a>
       </div>
       <div class="col-six tab-full" style="text-align:right;">
         <a href="../dataProject1/index.html" class="button">Next →</a>
@@ -98,6 +131,29 @@
       </div>
     </div>
   </footer>
+<script>
+  // Create lightbox dynamically
+  const lightbox = document.createElement('div');
+  lightbox.classList.add('lightbox');
+  lightbox.innerHTML = '<span class="close-lightbox">&times;</span><img class="lightbox-content">';
+  document.body.appendChild(lightbox);
+
+  const images = document.querySelectorAll('.project-gallery img');
+  const lightboxImg = document.querySelector('.lightbox-content');
+  const close = document.querySelector('.close-lightbox');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  close.addEventListener('click', () => lightbox.style.display = 'none');
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) lightbox.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
