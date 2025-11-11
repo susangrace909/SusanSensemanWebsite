@@ -76,6 +76,9 @@ body {
   color: #6e6e6e;
 }
 
+section {
+  padding: 6rem 0 7rem !important;
+}
 /**
  * links - (_document-setup.scss)
  * -------------------------------------------------------------------
@@ -1512,7 +1515,7 @@ input[type="file"] {
  */
 #about {
   background: #ffffff;
-  padding-top: 12rem;
+  padding-top: 6rem;
   padding-bottom: 15rem;
 }
 #about .section-intro {
