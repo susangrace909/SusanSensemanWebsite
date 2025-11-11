@@ -1386,11 +1386,11 @@ input[type="file"] {
   background-attachment: fixed;
 
   width: 100%;
-  min-height: 720px;
+  min-height: 660px;
   display: table;
   position: relative;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 170px;
   overflow: hidden;
   z-index: 0;
 }
