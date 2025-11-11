@@ -76,7 +76,7 @@ body {
   color: #6e6e6e;
 }
 
-section {
+section:not(#intro) {
   padding: 6rem 0 7rem !important;
 }
 /**
@@ -1828,12 +1828,18 @@ input[type="file"] {
   color: #ffffff; /* job titles in bright white */
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  margin-bottom: .5rem;
 }
 
 #education .timeline-content h4 {
   color: #B4D6B9; /* school / company names in pink */
-  font-family: "Lora", serif;
-  font-style: italic;
+  font-family: "Lora", serif; 
+  font-size: 21px;
+  margin-bottom: 0rem;
+}
+
+#education .timeline-header p {
+    margin-bottom: 1rem;
 }
 
 #education .timeline-header p,
@@ -1844,6 +1850,7 @@ input[type="file"] {
 
 #education .timeline-ico i {
   color: #B4D6B9; /* make icons pink too */
+  font-size: 3.05rem;
 }
 
 /** 
