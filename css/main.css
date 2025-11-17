@@ -1901,6 +1901,7 @@ input[type="file"] {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  background-color: #2F2F2F; /*Tried to add charcoal background so font pops */
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1923,7 +1924,7 @@ input[type="file"] {
   font-family: "poppins-regular", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 #portfolio .folio-item:hover .overlay {
   background: rgba(0, 0, 0, 0.8);
