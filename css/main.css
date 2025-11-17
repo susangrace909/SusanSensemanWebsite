@@ -1931,6 +1931,8 @@ input[type="file"] {
 }
 #portfolio .folio-item:hover .folio-item-cell {
   left: 0;
+  background-color: #2F2F2F; /*added color on hover */
+  opacity: 35%; /* made see through */
 }
 #portfolio .folio-item:hover img {
   -webkit-transform: scale(1.05);
