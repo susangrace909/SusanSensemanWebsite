@@ -1943,6 +1943,30 @@ input[type="file"] {
   transform: scale(1.05);
 }
 
+#project1 {
+  background-image: url("projects/dataProject1/full-dashboard.png");
+}
+
+#project2 {
+  background-image: url("projects/dataProject2/TrendOverTime.png");
+}
+
+#project3 {
+  background-image: url(".png");
+}
+
+#project4 {
+  background-image: url(".png");
+}
+
+#project5 {
+  background-image: url(".png");
+}
+
+#project6 {
+  background-image: url(".png");
+}
+
 .actions {
   display: flex;
   justify-content: center;
