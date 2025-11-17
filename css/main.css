@@ -1945,26 +1945,44 @@ input[type="file"] {
 
 #project1 {
   background-image: url("projects/dataProject1/full-dashboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #project2 {
   background-image: url("projects/dataProject2/TrendOverTime.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #project3 {
-  background-image: url(".png");
+  background-image: url("projects/dataProject3/.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #project4 {
-  background-image: url(".png");
+  background-image: url("projects/dataProject4/.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #project5 {
-  background-image: url(".png");
+  background-image: url("projects/dataProject5/.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #project6 {
-  background-image: url(".png");
+  background-image: url("projects/dataProject6/.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .actions {
