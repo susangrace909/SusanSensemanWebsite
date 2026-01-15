@@ -2886,7 +2886,6 @@ footer .copyright span:last-child::after {
 
 .item-wrap {
     position: absolute;
-        bottom: unset !important;
     bottom: 0;
     overflow: hidden;
     width: 100%;
