@@ -1943,6 +1943,11 @@ input[type="file"] {
   transform: scale(1.05);
 }
 
+#folio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} 
+
 #project1 {
   background-image: url("projects/dataProject1/full-dashboard.png");
   background-repeat: no-repeat;
