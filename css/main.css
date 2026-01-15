@@ -1864,10 +1864,22 @@ input[type="file"] {
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
-#portfolio .folio-item {
+/* #portfolio .folio-item {
   padding: 0;
   position: relative;
   overflow: hidden;
+} */
+#portfolio .folio-item {
+    padding: 0;
+    position: relative;
+    /* overflow: hidden; */
+    max-height: 100%;
+    min-height: 300px;
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #portfolio .folio-item img {
   vertical-align: middle;
@@ -1947,6 +1959,10 @@ input[type="file"] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 } 
+
+#folio-wrapper:before {
+  display: none;
+}
 
 #project1 {
   background-image: url("projects/dataProject1/full-dashboard.png");
@@ -2859,11 +2875,21 @@ footer .copyright span:last-child::after {
 }
 
 /* Make portfolio overlays clickable */
-.item-wrap {
+/* .item-wrap {
   position: relative;
-  border: 2px solid #343434;       /* Deep Charcoal border */
-  overflow: hidden;                /* keeps overlay tidy inside */
+  border: 2px solid #343434;       
+  overflow: hidden;                
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.item-wrap {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s 
+ease, box-shadow 0.3s 
+ease;
 }
 
 .item-wrap:hover {
